@@ -1,18 +1,27 @@
-import React from 'react'
-import Form from './Form'
+import React from "react";
+import Form from "./Form";
 
 function HeroSection() {
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="w-full lg:w-1/2 bg-blue-500">
-        <Form />
+      <div className="w-full flex flex-row lg:w-1/2 justify-between">
+        {/* Form Section */}
+        <div className="w-2/3 ml-6">
+          <Form />
+        </div>
+
+        {/* Rotated Text Beside Form */}
+        <div className="w-1/3 flex justify-center  items-center">
+          <p className="-rotate-90 whitespace-nowrap text-[#d9e0e3] text-8xl font-bold">
+            COMING SOON
+          </p>
+        </div>
       </div>
-      <div className="hidden md:flex w-1/2 bg-green-500 flex justify-end">
-      <div className="text-gray-300 mx-5 ">COMING SOON</div>
-        <img className="" src="/images/sidepic.png" alt="placeholder" />
+      <div className="hidden lg:flex w-1/2">
+        <img className="w-full" src="/images/sidepic.png" alt="placeholder" />
       </div>
     </div>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;
