@@ -6,13 +6,13 @@ function HeroSection() {
     <div className="flex flex-col lg:flex-row">
       <div className="w-full flex flex-row lg:w-1/2 justify-between">
         {/* Form Section */}
-        <div className="w-2/3 ml-6">
+        <div className="w-full md:w-2/3 px-4">
           <Form />
         </div>
 
         {/* Rotated Text Beside Form */}
-        <div className="w-1/3 flex justify-center  items-center">
-          <p className="-rotate-90 whitespace-nowrap text-[#d9e0e3] text-8xl font-bold">
+        <div className="hidden w-1/3 md:flex justify-center items-center">
+          <p className="-rotate-90 whitespace-nowrap text-[#d9e0e3] text-8xl font-bold cursor-default">
             COMING SOON
           </p>
         </div>
